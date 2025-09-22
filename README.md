@@ -1,10 +1,12 @@
 AI‑Powered Real‑Time Exam Monitoring System
-Project Synopsis
+
+
+-Project Synopsis
 Online examinations are increasingly relied upon in education, but preserving academic integrity without intrusive or expensive tools remains a challenge. This project implements a privacy-first, AI-driven proctoring platform built with React, TypeScript, Supabase, and TensorFlow.js (TFJS).
 
 By running all detection directly in the student’s browser (e.g., extra person detection, mobile device identification, tab/window focus tracking), the system ensures fairness and accountability while never transmitting raw video to servers. Only violation events and metadata are securely logged.
 
-Review of Literature
+-Review of Literature
 CNN-based detectors (MobileNet family, COCO‑SSD) → efficient person/device recognition in real time.
 Computer vision for anomaly detection → bounding box overlays aid interpretability.
 Browser APIs (JavaScript Visibility API, focus/blur events) → detect tab switching.
@@ -13,7 +15,7 @@ Open-source AI & cloud integration → a community-driven alternative, emphasizi
 Problem Statement and Objectives
 Current systems either stream sensitive data to third parties or require costly licensed software. What is missing is a transparent, affordable, privacy-respecting real‑time invigilation system.
 
-Objectives:
+-Objectives:
 
 Detect multiple persons and cell phones in the camera feed
 Overlay bounding boxes with confidence scores for interpretability
@@ -146,4 +148,5 @@ Only lightweight JSON violation events are sent to Supabase.
 Requires HTTPS in production due to browser camera policy.
 License
 MIT License (recommended). Add LICENSE file in repo root.
+
 
