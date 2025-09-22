@@ -1,0 +1,7 @@
+project_id = "tlwcohainrraqtuxbdmn"
+
+[functions.send-whatsapp-alert]
+verify_jwt = false
+
+[functions.send-email-alert]
+verify_jwt = false
